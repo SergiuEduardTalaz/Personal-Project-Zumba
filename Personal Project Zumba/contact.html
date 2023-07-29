@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zumba Project - Contact</title>
+  <link rel="stylesheet" href="../Personal Project Zumba/CSS/contact.css">
+</head>
+<body>
+  <header>
+    <h1>Zumba Project</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br>
+
+        <label for="math-question" id="math-question-label"></label>
+        <input type="text" id="math-question" name="math-question" required><br>
+        <div class="new-math-question-container">
+          <button type="button" id="new-math-question">New Math Question</button>
+        </div>
+        <input type="submit" value="Submit" id="submit-button">
+        <button type="button" id="chat-button">Chat Live</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Sergiu-Eduard Talaz. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" class="social-icon"><img src="../Personal Project Zumba/Images/facebook.png" alt="Facebook"></a>
+      <a href="#" class="social-icon"><img src="../Personal Project Zumba/Images/twitter.png" alt="Twitter"></a>
+      <a href="#" class="social-icon"><img src="../Personal Project Zumba/Images/instagram.png" alt="Instagram"></a>
+    </div>
+  </footer>
+  <div class="modal" id="thank-you-modal">
+    <div class="modal-content">
+      <p>Thank you for your message!</p>
+    </div>
+  </div>
+  <div class="modal" id="chat-modal">
+    <div class="modal-content">
+      <h3>Live Chat Support</h3>
+      <p>Our chat support is currently offline. Please call us at <a href="tel:+123456789">+1 (234) 567-89</a> for immediate assistance.</p>
+      <button type="button" id="close-chat-modal">Close</button>
+    </div>
+  </div>
+  <script src="../Personal Project Zumba/JS/contact.js"></script>
+</body>
+</html>
